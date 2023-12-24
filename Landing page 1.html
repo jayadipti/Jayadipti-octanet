@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Services</title>
+    <style>
+        body {
+            font-family: 'bold', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #611c1c;
+        }
+
+        header {
+            background-color: #0b0b0b;
+            color: #7d1919;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color:red;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #0d3e76;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background-image: url('your-hero-image.jpg');
+            background-size: cover;
+            color:firebrick;
+            font-family: "bold"
+            text-align: center;
+            padding 100px 20px;
+        }
+
+        .services {
+            background-color:salmon;
+            color: #0b0b0b;
+        }
+
+        .contact {
+            background-color: #0d3e76;
+            color:red;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 40px;
+            font-size: 18px;
+            color: #0b ;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cta-button:hover {
+            background-color: #58a6ff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #9e2424;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>Octanet Services</h1>
+        <p>Welcome to our landing page.This platform is Committed To Serve Quality And Secured Services.
+            We Work Closely With Our Team And Client Throughout Development To Ensure That We Are Still Aligned With The End-Goal. We Are Committed To Producing Exceptional Software For Each Of Our Clients. </div></p> 
+        </p>
+        <body style="background:url('https://th.bing.com/th/id/OIP.VB9cRn4DzLeVKuUUeXyflAAAAA?rs=1&pid=ImgDetMain')">
+        <a href="#contact" class="cta-button">Get in Touch</a>
+    </section>
+
+    <section id="services" class="services">
+        <h1>My project as a octanet intern landing page</h1>
+        <p>Hey Myself Jayadipti,this is my first internship as a web devloper and i am very greatful to octanet private limited 
+          for this opportunity.
+        </p>
+        <h>To know more information about our services click on the link below</h>
+        <p>
+        <a href= "https://octanet.in/"> Octanet services </a></p>
+    </section>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <style>
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: green; /* Green color */
+        }
+    </style>
+</head>
+<body>
+    <section id="contact" class="contact">
+    <form id="myForm">
+        <!-- Your form fields go here -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="project">Project Idea:</label>
+        <input type="text" id="project" name="project" required>
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" required>
+        <button type="submit">Submit</button>
+    </form>
+    </section>
+
+    <div id="thankYou" style="display: none;">
+        <h1>Thank You!</h1>
+        <p>Your form has been successfully submitted.</p>
+    </div>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevents the form from submitting in the traditional way
+
+            // Your form processing logic goes here
+            // You can use AJAX to send form data to the server if needed
+
+            // Hide the form and display the thank you message
+            document.getElementById("myForm").style.display = "none";
+            document.getElementById("thankYou").style.display = "block";
+        });
+    </script>
+</body>
+</html>
